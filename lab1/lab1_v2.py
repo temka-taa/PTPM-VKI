@@ -16,7 +16,7 @@ if len(login)< 5:
     print('Login failed')
 
 elif login in black_list:
-    print('Login failed')
+    print('Login failed ')
 else:
     for i in l_patterns:
         match re.fullmatch(i, login):
