@@ -19,3 +19,70 @@
 2026-09-16 23:04:33 | [ERROR  ] | Login failed: login1234 | reason: no pattern matched
 2026-09-16 23:04:33 | [INFO   ] | Start password check | login login1234
 2026-09-16 23:04:33 | [INFO   ] | Login=login1234 | pass=8d51cb2254b0
+2026-09-16 23:20:34 | [INFO   ] | Логгер успешно сконфигурирован
+2026-09-16 23:20:34 | [INFO   ] | Приложение запущено
+2026-09-16 23:20:56 | [DEBUG  ] | Start login check for format | login=+79537846735
+2026-09-16 23:20:56 | [INFO   ] | Login successful: +79537846735
+2026-09-16 23:20:56 | [INFO   ] | Start password check | login +79537846735
+2026-09-16 23:20:56 | [INFO   ] | Login=+79537846735 | pass=e4d7a53edeb1 | result: e4d7a53edeb1 matched
+2026-09-16 23:22:15 | [INFO   ] | Логгер успешно сконфигурирован
+2026-09-16 23:22:15 | [INFO   ] | Приложение запущено
+2026-09-16 23:22:31 | [ERROR  ] | Login=89537846735 | error: Login is bad(blacklist)
+2026-09-16 23:22:31 | [ERROR  ] | Login failed: 89537846735 | error: Login no pattern matched
+2026-09-16 23:22:31 | [INFO   ] | Start password check | login 89537846735
+2026-09-16 23:22:31 | [ERROR  ] | Login 89537846735 | error: Login no pattern matched | pass=754fbc2000c4
+2026-09-16 23:26:32 | [INFO   ] | Логгер успешно сконфигурирован
+2026-09-16 23:26:32 | [INFO   ] | Приложение запущено
+2026-09-16 23:26:46 | [ERROR  ] | Login=89537846735 | error: Login is bad(blacklist)
+2026-09-16 23:26:46 | [ERROR  ] | Login failed: 89537846735 | error: Login no pattern matched
+2026-09-16 23:26:46 | [INFO   ] | Start password check | login 89537846735
+2026-09-16 23:26:46 | [ERROR  ] | Login 89537846735 | error: Login no pattern matched | pass=754fbc2000c4
+2026-09-16 23:29:35 | [INFO   ] | Логгер успешно сконфигурирован
+2026-09-16 23:29:35 | [INFO   ] | Приложение запущено
+2026-09-16 23:29:50 | [ERROR  ] | Login=89537846735 | error: Login is bad(blacklist)
+2026-09-16 23:29:50 | [INFO   ] | Login successful: 89537846735
+2026-09-16 23:29:50 | [INFO   ] | Start password check | login 89537846735
+2026-09-16 23:29:50 | [ERROR  ] | Login 89537846735 | error: Login is bad(blacklist) | pass=754fbc2000c4
+2026-09-16 23:29:56 | [INFO   ] | Логгер успешно сконфигурирован
+2026-09-16 23:29:56 | [INFO   ] | Приложение запущено
+2026-09-16 23:30:22 | [DEBUG  ] | Start login check for format | login=hello_1234
+2026-09-16 23:30:22 | [WARNING] | Login hello_1234 not matched, because Non correct number format "+7xxxxxxxxxx"
+2026-09-16 23:30:22 | [WARNING] | Login hello_1234 not matched, because Non correct number format "8xxxxxxxxxx"
+2026-09-16 23:30:22 | [WARNING] | Login hello_1234 not matched, because Non correct number format "+7-xxx-xxx-xxxx"
+2026-09-16 23:30:22 | [WARNING] | Login hello_1234 not matched, because Non correct email format "exsample@exampl.com"
+2026-09-16 23:30:22 | [INFO   ] | Login successful: hello_1234
+2026-09-16 23:30:22 | [INFO   ] | Start password check | login hello_1234
+2026-09-16 23:30:22 | [ERROR  ] | Login hello_1234 | error: Password with Latin letter | pass=71a2143bf6ce
+2026-09-16 23:32:20 | [INFO   ] | 
+
+
+
+
+
+2026-09-16 23:32:20 | [INFO   ] | Логгер успешно сконфигурирован
+2026-09-16 23:32:20 | [INFO   ] | Приложение запущено
+2026-09-16 23:32:42 | [ERROR  ] | Login=89537846735 | error: Login is bad(blacklist)
+2026-09-16 23:32:42 | [INFO   ] | Login successful: 89537846735
+2026-09-16 23:32:42 | [INFO   ] | Start password check | login 89537846735
+2026-09-16 23:32:42 | [ERROR  ] | Login 89537846735 | error: Second password not matched | pass=3cb7b136fec7
+2026-09-16 23:40:11 | [INFO   ] | 
+
+
+
+
+
+2026-09-16 23:40:11 | [INFO   ] | Логгер успешно сконфигурирован
+2026-09-16 23:40:11 | [INFO   ] | Приложение запущено
+2026-09-16 23:40:32 | [ERROR  ] | Login=89537846735 | error: Login is bad(blacklist)
+2026-09-16 23:40:37 | [INFO   ] | 
+
+
+
+
+
+2026-09-16 23:40:37 | [INFO   ] | Логгер успешно сконфигурирован
+2026-09-16 23:40:37 | [INFO   ] | Приложение запущено
+2026-09-16 23:40:53 | [DEBUG  ] | Start login check for format | login=+79537846735
+2026-09-16 23:40:53 | [INFO   ] | Login successful: +79537846735
+2026-09-16 23:40:53 | [INFO   ] | Start password check | login +79537846735
+2026-09-16 23:40:53 | [ERROR  ] | Login +79537846735 | error: Second password not matched | pass=6b5c4e7488bf
