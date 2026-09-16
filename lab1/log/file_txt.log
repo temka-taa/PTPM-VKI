@@ -1,0 +1,21 @@
+2026-09-16 23:03:47 | [INFO   ] | Логгер успешно сконфигурирован
+2026-09-16 23:03:47 | [INFO   ] | Приложение запущено
+2026-09-16 23:03:47 | [DEBUG  ] | Start login check for format | login=login_123
+2026-09-16 23:03:47 | [WARNING] | Login login_123 not matched, because Non correct number format "+7xxxxxxxxxx"
+2026-09-16 23:03:47 | [WARNING] | Login login_123 not matched, because Non correct number format "8xxxxxxxxxx"
+2026-09-16 23:03:47 | [WARNING] | Login login_123 not matched, because Non correct number format "+7-xxx-xxx-xxxx"
+2026-09-16 23:03:47 | [WARNING] | Login login_123 not matched, because Non correct email format "exsample@exampl.com"
+2026-09-16 23:03:47 | [INFO   ] | Login successful: login_123
+2026-09-16 23:03:47 | [INFO   ] | Start password check | login login_123
+2026-09-16 23:03:47 | [ERROR  ] | Login=login_123 | Password = 4a0c928d741f not special simbols
+2026-09-16 23:04:33 | [INFO   ] | Логгер успешно сконфигурирован
+2026-09-16 23:04:33 | [INFO   ] | Приложение запущено
+2026-09-16 23:04:33 | [DEBUG  ] | Start login check for format | login=login1234
+2026-09-16 23:04:33 | [WARNING] | Login login1234 not matched, because Non correct number format "+7xxxxxxxxxx"
+2026-09-16 23:04:33 | [WARNING] | Login login1234 not matched, because Non correct number format "8xxxxxxxxxx"
+2026-09-16 23:04:33 | [WARNING] | Login login1234 not matched, because Non correct number format "+7-xxx-xxx-xxxx"
+2026-09-16 23:04:33 | [WARNING] | Login login1234 not matched, because Non correct email format "exsample@exampl.com"
+2026-09-16 23:04:33 | [WARNING] | Login login1234 not matched, because Non correct login (Cyrillic simbols or not numbers or not "_") 
+2026-09-16 23:04:33 | [ERROR  ] | Login failed: login1234 | reason: no pattern matched
+2026-09-16 23:04:33 | [INFO   ] | Start password check | login login1234
+2026-09-16 23:04:33 | [INFO   ] | Login=login1234 | pass=8d51cb2254b0
