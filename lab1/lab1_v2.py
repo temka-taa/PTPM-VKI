@@ -54,6 +54,7 @@ try:
             match re.fullmatch(i, login):
                 case re.Match():
                     # print(login)
+                    login_ok = True
                     break
                 case _:
                     login_ok = False
