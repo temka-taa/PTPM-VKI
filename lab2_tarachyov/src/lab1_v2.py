@@ -37,7 +37,7 @@ def lgn(login, passw, A_passw ):
             r"^[\w\.-]+@([\w-]+\.)+[\w-]{2,4}$": 'Non correct email format "exsample@exampl.com"' ,
             r"^(?=.*[A-Za-z])(?=.*\d)(?=.*_)[A-Za-z0-9_]+$":'Non correct login (Cyrillic simbols or not numbers or not "_") '
         }
-        black_list = ['89537846735', 'artem.tarachev2@gmail.com']
+        black_list = ['89537846735', 'artem.tarachev2@gmail.com', '89999999999']
         login_ok = True
 
         if len(login)< 5:
@@ -87,7 +87,7 @@ def lgn(login, passw, A_passw ):
                         err = True
                 if err : res_msg = 'Password with Latin letter'
                 elif not a : res_msg = 'Password not big letter'
-                elif not b : res_msg = 'Password  not small letter'
+                elif not b : res_msg = 'Password not small letter'
                 elif not c : res_msg = 'Password not numbers'
                 elif not d : res_msg = 'Password not special simbols'
                 elif passw != A_passw : res_msg = 'Second password not matched'
