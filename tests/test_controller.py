@@ -20,7 +20,7 @@ class StubInput:
 
 class TestController(unittest.TestCase):
     def setUp(self):
-        self.db = w_DB()
+        self.db= w_DB()
         self.sender = Mock()
         self.input = StubInput("Test_user1", "Пароль123!", "Пароль123!")
         self.validator = valid()
