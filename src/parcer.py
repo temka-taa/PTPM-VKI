@@ -7,15 +7,7 @@
 # в lib появилась requests и несколько библеотек для зависимостей
 # снизу справа inter sett ->add interp-> находим ео в файле scripts
 import requests
-
-# resp = requests.get('https://4pda.to/')
-
-#print(resp) #проверяем
-# запуск py .\ex_parcer.py
-#print(resp.text) #html разметка
-
-# библеотека pip install beautifulsoup4
-import bs4 #импортируем ее
+import bs4
 # url = 'https://habr.com/ru/feed/'
 
 class ForumParser:
@@ -30,7 +22,6 @@ class ForumParser:
             )
         }
         resp = requests.get(self.url, headers=headers, timeout=10)
-        # print(resp.text)
         bs = bs4.BeautifulSoup(resp.text, 'html.parser') #'html.parser' для режима работы
         all_posts = bs.find_all('article', class_='tm-articles-list__item') #ищем все обьекты с тегом див и атрибутами ищем карточки
         parsed_data = []
@@ -42,17 +33,18 @@ class ForumParser:
                 message = mess.find('span').text # вот тут конкретно
             else:
                 message = 'Rate not found'
-        #     print(f" id - {id_}, L - {autor_login} , mess - {message}" )                        !!!!!!!!
 
             parsed_data.append({
                 'id': int(id_),
                 'name': autor_login,
                 'message': message,
             })
-            return parsed_data
+        return parsed_data
     def save_to_db(self, parse_data, repo):
         for item in parse_data:
             repo.add(item["id"],item["name"], item["message"])
+
+
 
 # .\venv\ не должно быть в репо
 # pip freeze какие библ есть в окружении

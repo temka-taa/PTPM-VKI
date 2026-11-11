@@ -16,13 +16,15 @@ class DatabaseRepository:
 
     def get_by_id(self, comment_id):
         row = self.conn.execute(
-            'SELECT * FROM comments WHERE id = ?', (comment_id,)
+            'SELECT * FROM comments WHERE id = ?',
+            (comment_id,)
         ).fetchone()
         return dict(row) if row else None
 
     def get_by_name(self, username):
         rows = self.conn.execute(
-            'SELECT * FROM comments WHERE name = ?', (username,)
+            'SELECT * FROM comments WHERE name = ?',
+            (username,)
         ).fetchall()
         return [dict(row) for row in rows]
 
