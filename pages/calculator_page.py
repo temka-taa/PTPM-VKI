@@ -3,7 +3,8 @@ from selenium.webdriver.support.ui import Select, WebDriverWait
 import time
 
 class CalculatorPage:
-    url = "https://www.globalsqa.com/angularJs-protractor/SimpleCalculator/"
+    # url = "https://www.globalsqa.com/angularJs-protractor/SimpleCalculator/"
+    url = "file:///g%3A/pr1/calc.html"
     a = (By.CSS_SELECTOR, 'input[ng-model="a"]')
     b = (By.CSS_SELECTOR, 'input[ng-model="b"]')
     oper = (By.CSS_SELECTOR, 'select[ng-model="operation"]')

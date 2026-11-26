@@ -14,6 +14,7 @@ class CalculatorTests(unittest.TestCase):
         self.page.open()
 
     def tearDown(self):
+        self.driver.save_screenshot("screen.png")
         time.sleep(1)
         self.driver.quit()
 
